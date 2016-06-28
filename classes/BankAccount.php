@@ -26,7 +26,7 @@ class BankAccount implements IfaceBankAccount
         //implement this method
 
         if((int) (string)$amount > (int) (string)$this->balance) throw new Exception("Withdrawl amount larger than balance", 1);
-        
+       
 
         $account->balance = (int) (string)$account->balance + (int) (string)$amount;
         $this->balance = (int) (string)$this->balance - (int) (string)$amount;
