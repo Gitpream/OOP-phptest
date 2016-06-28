@@ -18,6 +18,7 @@ class BankAccount implements IfaceBankAccount
     public function deposit(Money $amount)
     {
         //implement this method
+        $this->balance =  (int) (string)$this->balance + (int) (string)$amount;
     }
 
     public function transfer(Money $amount, BankAccount $account)
