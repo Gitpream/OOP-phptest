@@ -31,6 +31,8 @@ class BankAccount implements IfaceBankAccount
     {
         //implement this method
 
+        $this->balance =  (int) (string)$this->balance - (int) (string)$amount;
+
 
     }
 }
